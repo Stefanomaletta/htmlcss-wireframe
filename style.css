@@ -6,7 +6,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -14,22 +14,23 @@
 LA LARGHEZZA DEL BODY A 512px 
 e diamo un bordo generale di 1px di tipo dashed 
 e di colore grigio*/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     width: 512px;
-    border: 1px dashed gray;
-    text-align: center;
+    border: 1px dashed grey;
 }
 
 /*IMPOSTIAMO L'HEADER CON UN PADDING 
 SUPERIORE/INFERIORE DI 10PX E LATERALE 
 (DESTRA/SINISTRA) DI 20PX
 DIAMO UN BORDO DI 2PX SOLID DI COLORE NERO*/
-.header {
+header {
     padding: 10px 20px;
-    border: 2px solid rgba(0, 0, 0, 1.0);
+    border: 2px solid black;
 }
+
 
 /* IMPOSTIAMO LA CLASSE CONTENT PERCHÉ ABBIA UN
 PADDING DI 20PX SOPRA/SOTTO E 40PX DESTRA/SINISTRA */
@@ -65,12 +66,7 @@ E 20PX LATERALE
 UN BORDO SUPERIORE DI 2PX SOLIDO E NERO
 */
 .footer {
-    /*SINGOLE VOCI*/
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    /*SCORCIATOIA UNICA*/
+
     padding: 10px 20px;
     border-top: 2px solid rgb(0, 0, 0);
 }
