@@ -20,6 +20,7 @@ body {
     font-style: italic;
     width: 512px;
     border: 1px dashed grey;
+    background-color: #f2f2f2;
 }
 
 /*IMPOSTIAMO L'HEADER CON UN PADDING 
@@ -28,14 +29,23 @@ SUPERIORE/INFERIORE DI 10PX E LATERALE
 DIAMO UN BORDO DI 2PX SOLID DI COLORE NERO*/
 header {
     padding: 10px 20px;
-    border: 2px solid black;
+    background-color: #263445;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    color: aliceblue;
+
 }
 
+header h1 {
+    font-size: 28px;
+
+}
 
 /* IMPOSTIAMO LA CLASSE CONTENT PERCHÉ ABBIA UN
 PADDING DI 20PX SOPRA/SOTTO E 40PX DESTRA/SINISTRA */
 .content {
     padding: 20px 40px;
+
 }
 
 /*IMPOSTIAMO LA CLASSE CARD CON LE SEGUENTI CARATTERISTICHE:
@@ -44,19 +54,40 @@ MARGINE INFERIORE DI 20PX
 UN PADDING GENERALE DI 20PX 
 UN BORDO DI 2PX SOLID DI COLORE NERO
 */
+
 .card {
     min-height: 160px;
     margin-bottom: 20px;
     padding: 20px;
-    border: 2px solid black;
+    border: 1px solid rgb(202, 201, 201);
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+
 }
 
 /*
 ALLA CLASSE CARD, MA SOLO PER GLI H2 
 VOGLIO UN MARGINE INFERIORE DI 4PX
 */
+.card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+
+}
+
 .card h2 {
     margin-bottom: 4px;
+    justify-content: flex-end;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
 }
 
 /*
@@ -68,5 +99,9 @@ UN BORDO SUPERIORE DI 2PX SOLIDO E NERO
 .footer {
 
     padding: 10px 20px;
-    border-top: 2px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    background-color: #263445;
+    border-radius: 20px 20px 0px 0px;
+    color: aliceblue
 }
